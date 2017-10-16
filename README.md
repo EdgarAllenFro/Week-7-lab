@@ -11,7 +11,7 @@ Time spent: **11-12** hours spent in total
     - Vulnerability types:dictionary attack
     - Tested in version: 4.2
     - Fixed in version:n.a
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough:https://github.com/EdgarAllenFro/Week-7-lab/blob/master/Brute_force_wpscan.gif
   - [ ] Steps to recreate: In the command line, go to the location on the system where wpscan is located. Once there run the command 
   [ruby wpscan.rb --url(website) --wordlist(dictionary of passwords) --username(user to test)]
     - [Link 1](http://www.hackingtutorials.org/web-application-hacking/hack-a-wordpress-website-with-wpscan/)
@@ -42,7 +42,7 @@ In addition to wpscan and wpdistillery, i sed the wordlist from the cain and abe
 
 - [WordPress Source Browser](https://core.trac.wordpress.org/browser/)
 - [WordPress Developer Reference](https://developer.wordpress.org/reference/)
-- [WPScan brute](http://www.hackingtutorials.org/web-application-hacking/hack-a-wordpress-website-with-wpscan/
+- [WPScan Brute](http://www.hackingtutorials.org/web-application-hacking/hack-a-wordpress-website-with-wpscan/)
 
 GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
