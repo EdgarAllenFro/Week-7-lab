@@ -8,31 +8,31 @@ Time spent: **11-12** hours spent in total
 
 1. (Required) Brute Force Password
   - [ ] Summary: Brute force of password using WpScan built in brute forcer tool
-    - Vulnerability types:dictionary attack
+    - Vulnerability types: dictionary attack
     - Tested in version: 4.2
-    - Fixed in version:n.a
-  - [ ] GIF Walkthrough:https://github.com/EdgarAllenFro/Week-7-lab/blob/master/Brute_force_wpscan.gif
+    - Fixed in version: n.a
+  - [ ] GIF Walkthrough: https://github.com/EdgarAllenFro/Week-7-lab/blob/master/Brute_force_wpscan.gif
   - [ ] Steps to recreate: In the command line, go to the location on the system where wpscan is located. Once there run the command 
   [ruby wpscan.rb --url(website) --wordlist(dictionary of passwords) --username(user to test)]
     - [Link 1](http://www.hackingtutorials.org/web-application-hacking/hack-a-wordpress-website-with-wpscan/)
 1. (Required) DOM XSS attack on WP
-  - [ ] Summary:Any wp theme or plugin that uses genericons is vulnerable to a DOM based XSS executed through the url 
-    - Vulnerability types:XSS,Themes/plugins
-    - Tested in version:4.2
+  - [ ] Summary: Any wp theme or plugin that uses genericons is vulnerable to a DOM based XSS executed through the url 
+    - Vulnerability types: XSS,Themes/plugins
+    - Tested in version: 4.2
     - Fixed in version: theme:twentyfifteen version 1.2
-  - [ ] GIF Walkthrough:https://github.com/EdgarAllenFro/Week-7-lab/blob/master/XSS1_WP.gif
+  - [ ] GIF Walkthrough: https://github.com/EdgarAllenFro/Week-7-lab/blob/master/XSS1_WP.gif
   - [ ] Steps to recreate: tag your xss to the end of a url bound to location [http:// site.com/wp-content/themes/twentyfifteen/genericons/example.html#1] 
   - [ ] Affected source code:genericons using themes or plugins
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:4.2
-    - Fixed in version: 
+    - [Link 1](https://blog.sucuri.net/2015/05/jetpack-and-twentyfifteen-vulnerable-to-dom-based-xss.html)
+1. (Required) Large file XSS
+  - [ ] Summary: Files that are too large can trigger a XSS
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.15 
   - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+  - [ ] Steps to recreate: Create an image file larger than the reqired file size then go to wpdistillery.dev/wp-admin/new-media.php and upload the large image where the name of the image contains the script to run. Once uploaded the script will execute
+  - [ ] Affected source code: new-media.php
+    - [Link 1](https://hackerone.com/reports/203515)
 
 ## Assets
 
@@ -44,6 +44,7 @@ In addition to wpscan and wpdistillery, i sed the wordlist from the cain and abe
 - [WordPress Developer Reference](https://developer.wordpress.org/reference/)
 - [WPScan Brute](http://www.hackingtutorials.org/web-application-hacking/hack-a-wordpress-website-with-wpscan/)
 - [DOM XSS Genericons](https://blog.sucuri.net/2015/05/jetpack-and-twentyfifteen-vulnerable-to-dom-based-xss.html)
+- [Large File XSS](https://hackerone.com/reports/203515)
 
 GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
