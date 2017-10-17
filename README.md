@@ -20,7 +20,7 @@ Time spent: **11-12** hours spent in total
     - Vulnerability types:XSS,Themes/plugins
     - Tested in version:4.2
     - Fixed in version: theme:twentyfifteen version 1.2
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough:https://github.com/EdgarAllenFro/Week-7-lab/blob/master/XSS1_WP.gif
   - [ ] Steps to recreate: tag your xss to the end of a url bound to location [http:// site.com/wp-content/themes/twentyfifteen/genericons/example.html#1] 
   - [ ] Affected source code:genericons using themes or plugins
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
