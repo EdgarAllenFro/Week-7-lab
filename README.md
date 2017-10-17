@@ -15,19 +15,19 @@ Time spent: **11-12** hours spent in total
   - [ ] Steps to recreate: In the command line, go to the location on the system where wpscan is located. Once there run the command 
   [ruby wpscan.rb --url(website) --wordlist(dictionary of passwords) --username(user to test)]
     - [Link 1](http://www.hackingtutorials.org/web-application-hacking/hack-a-wordpress-website-with-wpscan/)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+1. (Required) DOM XSS attack on WP
+  - [ ] Summary:Any wp theme or plugin that uses genericons is vulnerable to a DOM based XSS executed through the url 
+    - Vulnerability types:XSS,Themes/plugins
+    - Tested in version:4.2
+    - Fixed in version: theme:twentyfifteen version 1.2
   - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
+  - [ ] Steps to recreate: tag your xss to the end of a url bound to location [http:// site.com/wp-content/themes/twentyfifteen/genericons/example.html#1] 
+  - [ ] Affected source code:genericons using themes or plugins
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
-    - Tested in version:
+    - Tested in version:4.2
     - Fixed in version: 
   - [ ] GIF Walkthrough: 
   - [ ] Steps to recreate: 
@@ -43,6 +43,7 @@ In addition to wpscan and wpdistillery, i sed the wordlist from the cain and abe
 - [WordPress Source Browser](https://core.trac.wordpress.org/browser/)
 - [WordPress Developer Reference](https://developer.wordpress.org/reference/)
 - [WPScan Brute](http://www.hackingtutorials.org/web-application-hacking/hack-a-wordpress-website-with-wpscan/)
+- [DOM XSS Genericons](https://blog.sucuri.net/2015/05/jetpack-and-twentyfifteen-vulnerable-to-dom-based-xss.html)
 
 GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
