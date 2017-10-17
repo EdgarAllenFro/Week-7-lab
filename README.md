@@ -29,7 +29,7 @@ Time spent: **11-12** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.15 
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: https://github.com/EdgarAllenFro/Week-7-lab/blob/master/large_file_xss.gif
   - [ ] Steps to recreate: Create an image file larger than the reqired file size then go to wpdistillery.dev/wp-admin/new-media.php and upload the large image where the name of the image contains the script to run. Once uploaded the script will execute
   - [ ] Affected source code: new-media.php
     - [Link 1](https://hackerone.com/reports/203515)
